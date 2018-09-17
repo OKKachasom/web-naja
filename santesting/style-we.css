@@ -1,0 +1,86 @@
+#cssmenu{
+    border:none;
+    border:0px;
+    margin:20px;
+    padding:0px;
+ <!--   font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif; -->
+    font-size:12px;
+    color:#0000cc;
+    }
+#cssmenu ul{
+    background:#161211;
+    height:42px;
+    list-style:none;
+    margin:0;
+    padding:0;
+
+    }
+    #cssmenu li{
+        float:right;
+        padding:0px 9px 0px 9px;
+        }
+    #cssmenu li a{
+        color:#ffffff;
+        display:block;
+        font-weight:bold;
+        line-height:42px;
+        padding:0px 10px;
+        text-align:right;
+        text-decoration:none;
+        }
+        #cssmenu li a:hover{
+            color:#adb1ba;
+            text-decoration:none;
+            }
+    #cssmenu li ul{
+        background:#47b6f5;
+        border-left:2px solid #73c4f2;
+        border-right:2px solid #73c4f2;
+        border-bottom:2px solid #73c4f2;
+        display:none;
+        height:auto;
+        position:absolute;
+        width:200px;
+        z-index:200;
+        } 
+    #cssmenu li:hover ul{
+        display:block;
+        }
+    #cssmenu li li {
+        color:#000000;
+        display:block;
+        float:none;
+        padding:0px;
+        width:200px;
+        }  
+    #cssmenu li ul a{
+        display:block;
+        font-size:12px;
+        padding:0px 10px 0px 15px;
+        text-align:left;
+        }
+        #cssmenu li ul a:hover{
+            background:#21bbbd;
+            color:#000000;
+            opacity:1.0;
+            filter:alpha(opacity=100);
+            }
+    #cssmenu p{
+        clear:left;
+        }  
+    #cssmenu .active > a{
+        background: #17b9bb;
+        color:#ffffff;
+        }
+    #cssmenu .active > a:hover {
+        color:#ffffff;
+        }
+    #text{
+        display: block;
+        color: #ffffff;
+        width: 200px;
+        height: 100px;
+        font-size: 25px;
+        font-family: sans-serif;
+        padding:5px 0px 0px 60px; 
+    }
