@@ -90,3 +90,21 @@
     padding-left: .75rem !important;
     padding-right: .75rem !important;
 }
+
+#pic1{
+    position: relative;
+    top: 10em;
+    right: 40em;
+}
+
+#pic2{
+    position: relative;
+    bottom: 14.5em;
+    left: 0em;
+}
+
+#pic3{
+    position: relative;
+    bottom: 39em;
+    left: 40em;
+}
