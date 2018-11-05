@@ -8,7 +8,9 @@
     color:#0000cc;
     }
 #cssmenu ul{
-    background:#161211;
+    background-color: transparent;
+    
+
     height:42px;
     list-style:none;
     margin:0;
@@ -84,3 +86,8 @@
         font-family: sans-serif;
         padding:5px 0px 0px 60px; 
     }
+    
+
+#welcome{
+    
+}
