@@ -1,7 +1,7 @@
 #cssmenu{
     border:none;
     border:0px;
-    margin:20px;
+    margin:0px;
     padding:0px;
  <!--   font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif; -->
     font-size:12px;
@@ -77,12 +77,12 @@
         }
     #text{
         display: block;
-        color: #000000;
+        color: #FFFFFF;
         width: 200px;
         height: 100px;
         font-size: 25px;
         font-family: sans-serif;
-        padding:5px 0px 0px 60px; 
+        padding:3px 0px 0px 60px; 
     }
 .padding-m, theboxes.has-padding-m > box {
     padding-top: 2.75rem !important;
@@ -107,4 +107,33 @@
     position: relative;
     bottom: 39em;
     left: 40em;
+}
+
+#mixed{
+    background:#996600;
+    height:42px;
+    list-style:none;
+    margin:280px;
+    padding:0px;
+    color: white;
+    font-size: 30px;
+}
+
+#recommend{
+    position: relative;
+    bottom: 7em;
+    right: 10em;
+    font-size: 32px;
+}
+
+#menu{
+    position: relative;
+    left: 48em;
+    bottom: 12em;
+    font-size: 22px;
+}
+
+#glass{
+    position: relative;
+    bottom: 7em;
 }
