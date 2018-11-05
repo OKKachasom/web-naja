@@ -84,5 +84,9 @@
         font-family: sans-serif;
         padding:5px 0px 0px 60px; 
     }
-
-
+.padding-m, theboxes.has-padding-m > box {
+    padding-top: 2.75rem !important;
+    padding-bottom: .75rem !important;
+    padding-left: .75rem !important;
+    padding-right: .75rem !important;
+}
