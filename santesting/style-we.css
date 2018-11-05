@@ -89,5 +89,9 @@
     
 
 #welcome{
-    
+    color: rgb(255,255,255);
+    position: absolute;
+    font-size: 55px;
+    left: 12em;
+    top: 3.5em;
 }
