@@ -49,12 +49,12 @@ p {
 	<h2 class="w3-center"></h2>
 
 <div class="w3-content w3-section" style="max-width:650px">
-  <img class="mySlides" src="about1.jpg" style="width:100%">
-  <img class="mySlides" src="about2.jpg" style="width:100%">
-  <img class="mySlides" src="about3.jpg" style="width:100%">
-  <img class="mySlides" src="about4.jpg" style="width:100%">
-  <img class="mySlides" src="about5.jpg" style="width:100%">
-  <img class="mySlides" src="about6.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="about1.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="about2.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="about3.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="about4.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="about5.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="about6.jpg" style="width:100%">
 </div>
 
 
@@ -74,7 +74,7 @@ function carousel() {
     myIndex++;
     if (myIndex > x.length) {myIndex = 1}    
     x[myIndex-1].style.display = "block";  
-    setTimeout(carousel, 2000); // Change image every 2 seconds
+    setTimeout(carousel, 4000); // Change image every 4 seconds
 }
 
 </script>
