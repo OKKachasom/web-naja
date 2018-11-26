@@ -8,8 +8,8 @@
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<link href="style.css" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" type="text/css" href="drink.css">
-	<link rel="stylesheet" type="text/css" href="js.js">
+	<!-- <link rel="stylesheet" type="text/css" href="drink.css">
+	<link rel="stylesheet" type="text/css" href="js.js"> -->
 
   <style>
 
@@ -63,6 +63,7 @@ img {vertical-align: middle;}
 .container {
     position: relative;
 }
+ 
 
 </style>
 
@@ -89,51 +90,58 @@ img {vertical-align: middle;}
 				</inner>
 			</box>
 
-	<div id="mixed">
+      <div id="mixed">
+      <p><center>Let's Mix</center></p>
+    </div>
+
+<!-- 	<div id="mixed">
 		<p style="text-indent: 37%;"><center>Let's Mix</center></p>
+	</div> -->
+
+
+<div>
+	<center><p id="recommend">Recommend Menu</center></p>
+
+	<div id="menu">
+    <p><button type="button" style="background-color: #A67C52;color:" class="w3-btn w3-button"onclick="plusSlides(5, 0);plusSlides(1, 1);plusSlides(3, 2);">
+ชาไทย</button> = ชาไทย+นม+นมข้นหวาน<br>
+	<button type="button" style="background-color: #A67C52;color:" class="w3-btn w3-button"onclick="document.getElementById('t6').src="img/bot-wmilk";"><center>ชาเชียว</button> = ชาเขียว+นม</center><br>
+		<button type="button" style="background-color: #A67C52;color:" class="w3-btn w3-button"onclick="plusSlides(5, 0);plusSlides(1, 1);plusSlides(3, 2);"><center>อเมริกาโน่</button> = กาแฟดำ+น้ำร้อน</center><br>
+		<button type="button" style="background-color: #A67C52;color:" class="w3-btn w3-button"onclick="plusSlides(5, 0);plusSlides(1, 1);plusSlides(3, 2);"><center>มอคค่า</button> = เอสเปสโซ+โกโก้+นม</center><br>
+		<button type="button" style="background-color: #A67C52;color:" class="w3-btn w3-button"onclick="plusSlides(5, 0);plusSlides(1, 1);plusSlides(3, 2);"><center>ลาเต้</button> = เอสเปสโซ+นม+นมข้นหวาน</center></p>
 	</div>
-
-
-
-	<p id="recommend" style="text-indent: 42%;">Recommend</p>
-	<div id="menu" >
-		<p>ชาไทย --> ชาไทย+นม+นมข้นหวาน</p>
-		<p>ชาเชียว --> ชาเขียว+นม</p>
-		<p>เอสเปสโซ --> กาแฟดำ+น้ำร้อน</p>
-		<p>มอคค่า --> เอสเปสโซ+โกโก้+นม</p>
-		<p>ลาเต้ --> เอสเปสโซ+นม+นมข้นหวาน</p>
-	</div>
-	
+</div>
 	
 		<h2 style="text-align:center">Drinking<br><br><br><br></h2>
 
 <div class="slideshow-container">
   <div class="mySlides1">
-    <img src="wimg/top-vani.png" style="width:30%">
+    <img id="t0" class="t0" class="test" src="wimg/top-vani.png" style="width:30%">
+ 
   </div>
 
   <div class="mySlides1">
-    <img src="wimg/top-milk.png" style="width:30%">
+    <img id="t1" class="t1" src="wimg/top-milk.png" style="width:30%">
   </div>
 
   <div class="mySlides1">
-    <img src="wimg/top-mat.png" style="width:30%">
+    <img id="t2" class="t2" src="wimg/top-mat.png" style="width:30%">
   </div>
 
   <div class="mySlides1">
-    <img src="wimg/top-hoji.png" style="width:30%">
+    <img id="t3" class="t3" src="wimg/top-hoji.png" style="width:30%">
   </div>
 
   <div class="mySlides1">
-    <img src="wimg/top-dark.png" style="width:30%">
+    <img id="t4" class="t4" src="wimg/top-dark.png" style="width:30%">
   </div>
 
   <div class="mySlides1">
-    <img src="wimg/top-cold.png" style="width:30%">
+    <img id="t5" class="t5" src="wimg/top-cold.png" style="width:30%">
   </div>
 
   <div class="mySlides1">
-    <img src="wimg/top-bottle.png" style="width:30%">
+    <img id="t6" class="t6" src="wimg/top-bottle.png" style="width:30%">
   </div>
 
   <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
@@ -142,31 +150,31 @@ img {vertical-align: middle;}
 
 <div class="slideshow-container">
   <div class="mySlides2">
-    <img src="wimg/mid-vani.png" style="width:30%">
+    <img class="m0" src="wimg/mid-vani.png" style="width:30%">
   </div>
 
   <div class="mySlides2">
-    <img src="wimg/mid-milk.png" style="width:30%">
+    <img class="m1" src="wimg/mid-milk.png" style="width:30%">
   </div>
 
   <div class="mySlides2">
-    <img src="wimg/mid-mat.png" style="width:30%">
+    <img class="m2" src="wimg/mid-mat.png" style="width:30%">
   </div>
 
   <div class="mySlides2">
-    <img src="wimg/mid-hoji.png" style="width:30%">
+    <img class="m3" src="wimg/mid-hoji.png" style="width:30%">
   </div>
 
   <div class="mySlides2">
-    <img src="wimg/mid-dark.png" style="width:30%">
+    <img class="m4" src="wimg/mid-dark.png" style="width:30%">
   </div>
 
   <div class="mySlides2">
-    <img src="wimg/mid-cold.png" style="width:30%">
+    <img class="m5" src="wimg/mid-cold.png" style="width:30%">
   </div>
 
   <div class="mySlides2">
-    <img src="wimg/mid-bottle.png" style="width:30%">
+    <img class="m6" src="wimg/mid-bottle.png" style="width:30%">
   </div>
 
   <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
@@ -175,39 +183,53 @@ img {vertical-align: middle;}
 
 <div class="slideshow-container">
   <div class="mySlides3">
-    <img src="wimg/bot-vani.png" style="width:30%">
+    <img class="b0" src="wimg/bot-vani.png" style="width:30%">
   </div>
 
   <div class="mySlides3">
-    <img src="wimg/bot-milk.png" style="width:30%">
+    <img class="b1" src="wimg/bot-milk.png" style="width:30%">
   </div>
 
   <div class="mySlides3">
-    <img src="wimg/bot-mat.png" style="width:30%">
+    <img class="b2" src="wimg/bot-mat.png" style="width:30%">
   </div>
 
   <div class="mySlides3">
-    <img src="wimg/bot-hoji.png" style="width:30%">
+    <img class="b3" src="wimg/bot-hoji.png" style="width:30%">
   </div>
 
   <div class="mySlides3">
-    <img src="wimg/bot-dark.png" style="width:30%">
+    <img class="b4" src="wimg/bot-dark.png" style="width:30%">
   </div>
 
   <div class="mySlides3">
-    <img src="wimg/bot-cold.png" style="width:30%">
+    <img class="b5" src="wimg/bot-cold.png" style="width:30%">
   </div>
 
   <div class="mySlides3">
-    <img src="bot-bottle.png" style="width:30%">
+    <img class="b6" src="bot-bottle.png" style="width:30%">
   </div>
 
   <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
   <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
 </div>
 
+
+
+<section class="t-center ffont padding-m">
+    <div class="cont-pd">
+      <theboxes class="spacing-m">
+        <box col="14">
+          <div class="w3-container w3-padding-16" >
+            <button type="button" style="background-color: #A67C52;color:" class="w3-btn w3-button " id="btn-ok">OK</button>
+            <button type="button" style="background-color: #A67C52;color:" class="w3-btn w3-button " id="btn-reset" onclick="plusSlides(-10, 2);plusSlides(-10, 1);plusSlides(-10, 0)">&#10095;RESET</button>
+          </div>
+        </box>
+      </theboxes>
+    </div>
+</section>
 <script>
-var slideIndex = [1,2];
+var slideIndex = [0,1,2];
 var slideId = ["mySlides1", "mySlides2", "mySlides3"]
 showSlides(1, 0);
 showSlides(1, 1);
@@ -227,21 +249,9 @@ function showSlides(n, no) {
   }
   x[slideIndex[no]-1].style.display = "block";  
 }
+
+
 </script>
-
-
-<section class="t-center ffont padding-m">
-    <div class="cont-pd">
-      <theboxes class="spacing-m">
-        <box col="14">
-          <div class="w3-container w3-padding-16" >
-            <button type="button" style="background-color: #A67C52;color:" class="w3-btn w3-button " id="btn-ok">OK</button>
-            <button type="button" style="background-color: #A67C52;color:" class="w3-btn w3-button " id="btn-reset" onclick="plusSlides(-10, 2);plusSlides(-10, 1);plusSlides(-10, 0)">&#10095;RESET</button>
-          </div>
-        </box>
-      </theboxes>
-    </div>
-</section>
 
 		
 </body>
