@@ -116,7 +116,7 @@
 		<div class="w3-row-padding">
 
 
-	  <img id="myImg" alt="Gray Cheesecake Charcoal" class="mySlides w3-container w3-third" src="bakery1.jpg" style="width:50%;display:none" onclick="onClick(this)" class="w3-hover-opacity">
+	  <img id="myImg" alt="Gray Cheesecake Charcoal" class="mySlides w3-container w3-third" src="bakery1.jpg" style="margin-left: 25%;width:50%;display:none" onclick="onClick(this)" class="w3-hover-opacity">
 
 	  <!-- <div id="myModal" class="modal">
   		<span class="close">×</span>
@@ -125,7 +125,7 @@
 	</div> -->
 
 
-	  <img id="myImg" alt="Lemon Poppy Seed Cake" class="mySlides w3-container w3-third" src="bakery2.jpg" style="width:50%;"onclick="onClick(this)" class="w3-hover-opacity">
+	  <img id="myImg" alt="Lemon Poppy Seed Cake" class="mySlides w3-container w3-third" src="bakery2.jpg" style="margin-left: 25%;width:50%;"onclick="onClick(this)" class="w3-hover-opacity">
 
 	  <!-- <div id="myModal" class="modal">
   		<span class="close">×</span>
@@ -133,7 +133,7 @@
   		<div id="caption"></div>
 	</div> -->
 
-	  <img id="myImg" alt="Croissants Almond" class="mySlides w3-container w3-third" src="bakery3.jpg" style="width:50%;display:none"onclick="onClick(this)" class="w3-hover-opacity">
+	  <img id="myImg" alt="Croissants Almond" class="mySlides w3-container w3-third" src="bakery3.jpg" style="margin-left: 25%;width:50%;display:none"onclick="onClick(this)" class="w3-hover-opacity">
 
 	  <!-- <div id="myModal" class="modal">
   		<span class="close">×</span>
@@ -144,7 +144,7 @@
 </div>
 
 
- 	<div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+ 	<div id="modal01" class="w3-modal center" onclick="this.style.display='none'">
   <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
   <div class="w3-modal-content w3-animate-zoom">
     <img id="img01" style="width:100%">
@@ -217,6 +217,7 @@
 function onClick(element) {
   document.getElementById("img01").src = element.src;
   document.getElementById("modal01").style.display = "block";
+
 }
 	</script>
 
