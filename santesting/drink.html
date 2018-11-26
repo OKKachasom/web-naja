@@ -52,6 +52,18 @@ img {vertical-align: middle;}
   background-color: grey;
   color: blue;
 }
+
+.bottomright {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    font-size: 18px;
+}
+
+.container {
+    position: relative;
+}
+
 </style>
 
 </head>
@@ -223,8 +235,8 @@ function showSlides(n, no) {
       <theboxes class="spacing-m">
         <box col="14">
           <div class="w3-container w3-padding-16" >
-            <button type="button" class="w3-btn w3-button w3-green w3-border w3-hover-teal" id="btn-ok">OK</button>
-            <button type="button" class="w3-btn w3-button w3-red w3-border w3-hover-pink" id="btn-reset">RESET</button>
+            <button type="button" style="background-color: #A67C52;color:" class="w3-btn w3-button " id="btn-ok">OK</button>
+            <button type="button" style="background-color: #A67C52;color:" class="w3-btn w3-button " id="btn-reset" onclick="plusSlides(-10, 2);plusSlides(-10, 1);plusSlides(-10, 0)">&#10095;RESET</button>
           </div>
         </box>
       </theboxes>
