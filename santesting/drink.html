@@ -221,7 +221,8 @@ img {vertical-align: middle;}
       <theboxes class="spacing-m">
         <box col="14">
           <div class="w3-container w3-padding-16" >
-            <button type="button" style="background-color: #A67C52;color:" class="w3-btn w3-button " id="btn-ok">OK</button>
+            <button type="button" style="background-color: #A67C52;color:" class="w3-btn w3-button " onclick="myfunction()" id="btn-ok
+            ">OK</button>
             <button type="button" style="background-color: #A67C52;color:" class="w3-btn w3-button " id="btn-reset" onclick="plusSlides(-10, 2);plusSlides(-10, 1);plusSlides(-10, 0);document.getElementById('b6').src='wimg/bot-bottle.png'; document.getElementById('m6').src='wimg/mid-bottle.png'; document.getElementById('t6').src='wimg/top-bottle.png'">&#10095;RESET</button>
           </div>
         </box>
@@ -250,6 +251,9 @@ function showSlides(n, no) {
   x[slideIndex[no]-1].style.display = "block";  
 }
 
+function myfunction(){
+  alert("ยืนยันออเดอร์เรียบร้อยแล้ว")
+}
 
 </script>
 
