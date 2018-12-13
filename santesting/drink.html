@@ -225,19 +225,22 @@
       <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
     </div>
 
-<section class="t-center ffont" style="padding-top: 5em; padding-left: 40em;">
+<section class="t-center ffont" >
     <div class="cont-pd">
-      <theboxes class="spacing-m">
+      <theboxes class="spacing-m center">
 <box col="6">
     <inner class="contact-in w3-light-white round">
+            <form action="adddrink.php" method="post">
             <p style="text-align: left;padding-top: 1em;">Name</p>
-            <input type="text" name="fullname" id="fullname" size="30" class="w3-white" style="width: 100%"> 
+            <input type="text" name="name" id="inputName" size="30" class="w3-white" style="width: 100%"> 
 
             <p style="text-align: left;padding-top: 1em;">E-mail</p>
-            <input type="email" name="email" id="email" size="30" class="w3-white" style="width: 100%">
+            <input type="email" name="mail" id="inputEmail" size="30" class="w3-white" style="width: 100%">
 
             <p style="text-align: left;padding-top: 1em;">Phone</p>
-            <input type="tel" name="phone" id="phone" size="10" class="w3-white" style="width: 100%">
+            <input type="tel" name="tel" id="inputTel" size="10" class="w3-white" style="width: 100%">
+            <p></p>
+            <p>*กรอบให้ครบทุกช่องถึงจะสามารถสั่งน้ำได้</p>
 </box>
 </theboxes>
     </div>
@@ -249,7 +252,8 @@
         <theboxes class="spacing-m">
           <box col="14">
             <div class="w3-container w3-padding-16" >
-              <button type="button" style="background-color: #A67C52;color:" class="w3-btn w3-button " onclick="myfunction()" id="btn-ok
+
+              <button type="button" style="background-color: #A67C52;color:" class="w3-btn w3-button " onclick="myfunction()" id="submit
               ">OK</button>
               <button type="button" style="background-color: #A67C52;color:" class="w3-btn w3-button " id="btn-reset" onclick="plusSlides(-10, 2);plusSlides(-10, 1);plusSlides(-10, 0);document.getElementById('b6').src='wimg/bot-bottle.png'; document.getElementById('m6').src='wimg/mid-bottle.png'; document.getElementById('t6').src='wimg/top-bottle.png'">&#10095;RESET</button>
             </div>
@@ -279,9 +283,34 @@
            x[slideIndex[no]-1].style.display = "block";  
          }
 
-         function myfunction(){
-          alert("ยืนยันออเดอร์เรียบร้อยแล้ว")
+        
+
+        var toValidate = $('#inputName, #inputEmail, #inputTel'),
+    valid = false;
+toValidate.keyup(function () {
+    if ($(this).val().length > 0) {
+        $(this).data('valid', true);
+    } else {
+        $(this).data('valid', false);
+    }
+    toValidate.each(function () {
+        if ($(this).data('valid') == true) {
+            valid = true;
+        } else {
+            valid = false;
         }
+    });
+    if (valid === true) {
+        $('button[type=submit]').prop('disabled', false);
+        alert("ยืนยันออเดอร์เรียบร้อยแล้วครับ")   
+    }else{
+        $('button[type=submit]').prop('disabled', true); 
+        alert("ต้องกรอกข้อมูลให้ครบถึงจะส่งคำสั่งซื้อได้ครับ")    
+           
+    }
+
+    
+});
 
       </script>
 
