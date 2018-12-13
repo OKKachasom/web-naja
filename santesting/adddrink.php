@@ -1,5 +1,5 @@
 <?php
-	function conn(){
+
 		$servername = "localhost";
 		$username = "okkachasom_san";
 		$password = "8Oit27SSQm";
@@ -12,31 +12,9 @@
 		else{
 			return $conn;
 		}
-	}
 
 
-//Block 2
-$name= $_POST['name_entered'];
-$mail= $_POST['mail_entered'];
-$tel= $_POST['tel_entered'];
 
-//Block 3
-$connection= mysql_connect ($host, $user, $password);
-if (!$connection)
-{
-die ('Could not connect:' . mysql_error());
-}
-mysql_select_db($database, $connection);
-
-
-//Block 4
-$username_table= mysql_query( "SELECT username FROM $table WHERE username= '$username'" ) 
-or die("SELECT Error: ".mysql_error()); 
-
-
-//Block 5
-mysql_query("INSERT INTO $table (name, mail, tel)
-VALUES (value1, value2, value 3)");
 
 //Block 6
 echo 'You have been added.';

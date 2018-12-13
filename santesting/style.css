@@ -324,6 +324,43 @@ button {
     }
 }
 
+#frame {
+            width: 700px;
+            margin: auto;
+            margin-top: 125px;
+            border: solid 1px #CCC; /* SOME CSS3 DIV SHADOW */
+            -webkit-box-shadow: 0px 0px 10px #CCC;
+            -moz-box-shadow: 0px 0px 10px #CCC;
+            box-shadow: 0px 0px 10px #CCC; /* CSS3 ROUNDED CORNERS */
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -khtml-border-radius: 5px;
+            border-radius: 5px;
+            background-color: #FFF;
+        }
+    
+        #searchInput {
+            height: 30px;
+            line-height: 30px;
+            padding: 3px;
+            width: 300px;
+        }
+    
+        #submitBtn {
+            height: 40px;
+            line-height: 40px;
+            width: 120px;
+            text-align: center;
+        }
+    
+        #frame h1 {
+            text-align: center;
+        }
+    
+        #frame form {
+            text-align: center;
+            margin-bottom: 30px;
+
 @media only screen and (max-width: 650px){
 #text {
     display: block;

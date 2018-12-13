@@ -11,6 +11,24 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<!-- <link rel="stylesheet" type="text/css" href="drink.css">
 	<link rel="stylesheet" type="text/css" href="js.js"> -->
+  <script type='text/javascript' src='http://code.jquery.com/jquery.min.js'></script>
+  <script type='text/javascript'>
+  $(function () {
+                $('.input').keyup(function () {
+                    if ($(this).val() == '') {
+                        //Check to see if there is any text entered
+                        // If there is no text within the input ten disable the button
+                        $('.enableOnInput').prop('disabled', true);
+                    } else {
+                        //If there is text in the input, then enable the button
+                        $('.enableOnInput').prop('disabled', false);  
+                    }
+
+                });
+
+            }); </script>
+
+
 
   <style>
 
@@ -230,38 +248,52 @@
       <theboxes class="spacing-m center">
 <box col="6">
     <inner class="contact-in w3-light-white round">
-            <form action="adddrink.php" method="post">
+            <!-- <form action="adddrink.php" method="post" enctype="multipart/form-data" > -->
+            <div class='search'>
+            <form method="post">
             <p style="text-align: left;padding-top: 1em;">Name</p>
-            <input type="text" name="name" id="inputName" size="30" class="w3-white" style="width: 100%"> 
+            <input type="text" name="inputName" id="inputName" size="30" class="input w3-white" style="width: 100%"> 
 
             <p style="text-align: left;padding-top: 1em;">E-mail</p>
-            <input type="email" name="mail" id="inputEmail" size="30" class="w3-white" style="width: 100%">
+            <input type="text" name="inputEmail" id="inputEmail" size="30" class="input w3-white" style="width: 100%">
 
             <p style="text-align: left;padding-top: 1em;">Phone</p>
-            <input type="tel" name="tel" id="inputTel" size="10" class="w3-white" style="width: 100%">
+            <input type="text" name="inputTel" id="inputTel" size="10" class="input w3-white" style="width: 100%">
             <p></p>
             <p>*กรอบให้ครบทุกช่องถึงจะสามารถสั่งน้ำได้</p>
+            <input type="submit" onclick="alert()" style="background-color: #A67C52;color:" class="enableOnInput w3-btn w3-button " id="submit" value="OK" disabled='disabled' >
+              <button type="button" style="background-color: #A67C52;color:" class="w3-btn w3-button " id="btn-reset" onclick="plusSlides(-10, 2);plusSlides(-10, 1);plusSlides(-10, 0);document.getElementById('b6').src='wimg/bot-bottle.png'; document.getElementById('m6').src='wimg/mid-bottle.png'; document.getElementById('t6').src='wimg/top-bottle.png'">&#10095;RESET</button>
+          <!-- </from> --></form></div>
 </box>
 </theboxes>
     </div>
   </section>
 
 
-    <section class="t-center ffont padding-m">
+    <!-- <section class="t-center ffont padding-m">
       <div class="cont-pd">
         <theboxes class="spacing-m">
           <box col="14">
             <div class="w3-container w3-padding-16" >
 
-              <button type="button" style="background-color: #A67C52;color:" class="w3-btn w3-button " onclick="myfunction()" id="submit
-              ">OK</button>
+              <input type="submit" style="background-color: #A67C52;color:" class="enableOnInput w3-btn w3-button " id="submit" value="OK" disabled='disabled'>
               <button type="button" style="background-color: #A67C52;color:" class="w3-btn w3-button " id="btn-reset" onclick="plusSlides(-10, 2);plusSlides(-10, 1);plusSlides(-10, 0);document.getElementById('b6').src='wimg/bot-bottle.png'; document.getElementById('m6').src='wimg/mid-bottle.png'; document.getElementById('t6').src='wimg/top-bottle.png'">&#10095;RESET</button>
             </div>
           </box>
         </theboxes>
       </div>
-    </section>
+    </section> -->
+
+
+
+        
+    
     <script>
+
+      function alert(){
+          alert("ยืนยันออเดอร์เรียบร้อยแล้ว") }
+
+
       var slideIndex = [0,1,2];
       var slideId = ["mySlides1", "mySlides2", "mySlides3"]
       showSlides(1, 0);
@@ -283,34 +315,23 @@
            x[slideIndex[no]-1].style.display = "block";  
          }
 
+      
+
         
-
-        var toValidate = $('#inputName, #inputEmail, #inputTel'),
-    valid = false;
-toValidate.keyup(function () {
-    if ($(this).val().length > 0) {
-        $(this).data('valid', true);
-    } else {
-        $(this).data('valid', false);
-    }
-    toValidate.each(function () {
-        if ($(this).data('valid') == true) {
-            valid = true;
-        } else {
-            valid = false;
-        }
-    });
-    if (valid === true) {
-        $('button[type=submit]').prop('disabled', false);
-        alert("ยืนยันออเดอร์เรียบร้อยแล้วครับ")   
-    }else{
-        $('button[type=submit]').prop('disabled', true); 
-        alert("ต้องกรอกข้อมูลให้ครบถึงจะส่งคำสั่งซื้อได้ครับ")    
-           
-    }
-
-    
-});
+   
+    // $(function () {
+    //             $('#inputname').keyup(function () {
+    //                 if ($(this).val() == '') {
+    //                     //Check to see if there is any text entered
+    //                     // If there is no text within the input ten disable the button
+    //                     $('.enableOnInput').prop('disabled', true);
+    //                 } else {
+    //                     //If there is text in the input, then enable the button
+    //                     $('.enableOnInput').prop('disabled', false);
+    //                 }
+    //             });
+    //         }); 
+    //  // alert("ยืนยันออเดอร์เรียบร้อยแล้วครับ")   
 
       </script>
 
