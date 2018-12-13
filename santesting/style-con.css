@@ -220,11 +220,12 @@ button {
 
 
 
-@media only screen and (max-width: 374px){
+@media only screen and (max-width: 650px){
 @font-face{
     src: url(Muli-Regular.ttf);
     font-family: Muli;
 }
+
 
 h1{
     font-family: 'Muli', sans-serif;
@@ -435,7 +436,7 @@ button {
   transform: rotateY(180deg);
 }
 
-@media only screen and (max-width: 480px){
+@media only screen and (max-width: 650px){
 #text {
     display: block;
     /*color: #FFFFFF;*/
@@ -445,4 +446,5 @@ button {
     font-size: 25px;
     font-family: Muli;
     padding: 3px 0px 0px 60px;
+}
 }
