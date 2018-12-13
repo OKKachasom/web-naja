@@ -9,6 +9,27 @@
 	<link href="style-con.css" rel="stylesheet" type="text/css">
 </head>
 
+<script type='text/javascript' src='http://code.jquery.com/jquery.min.js'></script>
+  <script type='text/javascript'>
+  $(function () {
+                $('.input').keyup(function () {
+                    if ($(this).val() == '') {
+                        //Check to see if there is any text entered
+                        // If there is no text within the input ten disable the button
+                        $('.enableOnInput').prop('disabled', true);
+                    } else {
+                        //If there is text in the input, then enable the button
+                        $('.enableOnInput').prop('disabled', false);  
+                    }
+
+                });
+
+            }); </script>
+
+
+
+  <style>
+
 <style>
 	.footer {
     	position: relative;
@@ -63,18 +84,22 @@
 					<div class="w3-container w3-padding-16 " >
 						<p>Get in touch</p>
 					</div>
+					<div class='search'>
+            		<form method="post">
 					<inner class="contact-in w3-light-white round">
 						<p style="text-align: left;padding-top: .5em;">Name</p>
-						<input type="text" name="fullname" id="fullname" size="66" class="w3-white" style="width: 100%"> 
+						<input type="text" name="fullname" id="fullname" size="66" class="input w3-white" style="width: 100%"> 
 
 						<p style="text-align: left;padding-top: .5em;">E-mail</p>
-						<input type="email" name="email" id="email" size="66" class="w3-white" style="width: 100%">
+						<input type="email" name="email" id="email" size="66" class="input w3-white" style="width: 100%">
 
 						<p style="text-align: left;padding-top: .5em;">Comment</p>
-						<textarea rows="7" cols="70" name="comment" class="w3-white" style="resize: none" style="width: 100%"></textarea>
+						<textarea rows="7" cols="70" name="comment" class="input w3-white" style="resize: none" style="width: 100%"></textarea>
 
-						<button type="button" style="background-color: #A67C52;color: margin-top: 1em;padding: .5em 3em;color: #fff;font-weight: bold;font-size: 1.2em;
-    margin-top: 2%;" class="w3-btn w3-button" onclick="myfunction()" >ส่ง</button>
+						<!-- <button type="button" style="background-color: #A67C52;color: margin-top: 1em;padding: .5em 3em;color: #fff;font-weight: bold;font-size: 1.2em;margin-top: 2%;" class="w3-btn w3-button" onclick="myfunction()" disabled='disabled'>ส่ง</button> -->
+
+						<input type="submit" style="background-color: #A67C52;color: margin-top: 1em;padding: .25em 2em;color: #fff;font-weight: bold;font-size: 1em;margin-top: 2%;" class="enableOnInput w3-btn w3-button " id="submit" value="OK" disabled='disabled' >
+					</form></div>
 				</box>
 
 			</theboxes>
@@ -84,9 +109,9 @@
 	
 	
 	<script>
-		function myfunction(){
-  			alert("ส่งความคิดเห็นเรียบร้อยแล้ว")
-		}
+		// function myfunction(){
+  // 			alert("ส่งความคิดเห็นเรียบร้อยแล้ว")
+		// }
 	</script>
 
 	<footer class="footer w3-container w3-transparent w3-border-top" style="margin-top: 10%;">
