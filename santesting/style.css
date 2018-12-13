@@ -46,7 +46,7 @@ button {
         display:block;
         font-weight:bold;
         line-height:42px;
-        padding:0px 10px;
+        padding:0px 12px;
         text-align:right;
         text-decoration:none;
         }
@@ -212,6 +212,118 @@ button {
   color: white;
   transform: rotateY(180deg);
 }
+
+@media only screen and (max-width: 374px){
+    @font-face{
+    src: url(Muli-Regular.ttf);
+    font-family: Muli;
+}
+
+h1{
+    font-family: 'Muli', sans-serif;
+}
+
+button {
+    text-align: left;
+}
+
+#cssmenu{
+    border:none;
+    border:0px;
+    margin:0px;
+    padding:0px;
+<<<<<<< HEAD
+ <!--   font-family: Muli;  -->
+=======
+ <!--   font-family: Muli;  -->
+>>>>>>> c02b9caaf608eb0a6de7dec2327efbe825576545
+    font-size:12px;
+    color:#0000cc;
+
+    }
+
+#cssmenu ul{
+    background:#A67C52;
+    height:42px;
+    list-style:none;
+    margin:0;
+    padding:0;
+
+
+    }
+    #cssmenu li{
+        float:right;
+         display:block;
+        padding:0px 0px 0px 0px;
+
+        }
+    #cssmenu li a{
+        color:#FFFFFF;
+        display:block;
+        font-weight:bold;
+        line-height:42px;
+        padding:0px 6px;
+        text-align:right;
+        text-decoration:none;
+        }
+        #cssmenu li a:hover{
+            color:#000000;
+            text-decoration:none;
+            }
+    #cssmenu li ul{
+        background:#47b6f5;
+        border-left:2px solid #73c4f2;
+        border-right:2px solid #73c4f2;
+        border-bottom:2px solid #73c4f2;
+        display:none;
+        height:auto;
+        position:absolute;
+        width:200px;
+        z-index:200;
+        } 
+    #cssmenu li:hover ul{
+        display:block;
+        }
+    #cssmenu li li {
+        color:#000;
+        display:block;
+        float:none;
+        padding:0px;
+        width:200px;
+        }  
+    #cssmenu li ul a{
+        display:block;
+        font-size:12px;
+        padding:0px 10px 0px 15px;
+        text-align:left;
+        }
+        #cssmenu li ul a:hover{
+            background:#21bbbd;
+            color:#000000;
+            opacity:1.0;
+            filter:alpha(opacity=100);
+            }
+    #cssmenu p{
+        clear:left;
+        }  
+    #cssmenu .active > a{
+        background: #17b9bb;
+        color:#ffffff;
+        }
+    #cssmenu .active > a:hover {
+        color:#ffffff;
+        }
+    #text{
+        display: block;
+        color: #FFFFFF;
+        width: 50%;
+        height: 100px;
+        font-size: 25px;
+        font-family: Muli;
+        padding:3px 0px 0px 60px; 
+    }
+}
+
 @media only screen and (max-width: 480px){
 #text {
     display: block;
@@ -223,4 +335,3 @@ button {
     font-family: Muli;
     padding: 3px 0px 0px 60px;
 }
-

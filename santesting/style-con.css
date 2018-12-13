@@ -51,7 +51,7 @@ button {
         display:block;
         font-weight:bold;
         line-height:42px;
-        padding:0px 10px;
+        padding:0px 12px;
         text-align:right;
         text-decoration:none;
         }
@@ -220,7 +220,7 @@ button {
 
 
 
-@media only screen and (min-width: 1200px){
+@media only screen and (max-width: 374px){
 @font-face{
     src: url(Muli-Regular.ttf);
     font-family: Muli;
@@ -269,7 +269,7 @@ button {
         display:block;
         font-weight:bold;
         line-height:42px;
-        padding:0px 10px;
+        padding:0px 6px;
         text-align:right;
         text-decoration:none;
         }
@@ -433,4 +433,16 @@ button {
   opacity: 0.5;
   color: white;
   transform: rotateY(180deg);
-} }
+}
+
+@media only screen and (max-width: 480px){
+#text {
+    display: block;
+    /*color: #FFFFFF;*/
+    color: rgba(0, 0, 0, 0);
+    width: 50%;
+    height: 100px;
+    font-size: 25px;
+    font-family: Muli;
+    padding: 3px 0px 0px 60px;
+}
