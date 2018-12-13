@@ -219,13 +219,11 @@ button {
 
 
 
-
-@media only screen and (max-width: 650px){
-@font-face{
+@media only screen and (max-width: 374px){
+    @font-face{
     src: url(Muli-Regular.ttf);
     font-family: Muli;
 }
-
 
 h1{
     font-family: 'Muli', sans-serif;
@@ -330,110 +328,6 @@ button {
         font-family: Muli;
         padding:3px 0px 0px 60px; 
     }
-.padding-m, theboxes.has-padding-m > box {
-    padding-top: 2.75rem !important;
-    padding-bottom: .75rem !important;
-    padding-left: .75rem !important;
-    padding-right: .75rem !important;
-}
-
-#pic1{
-    position: relative;
-    top: 10em;
-    right: 40em;
-}
-
-#pic2{
-    position: relative;
-    bottom: 14.5em;
-    left: 0em;
-}
-
-#pic3{
-    position: relative;
-    bottom: 39em;
-    left: 40em;
-}
-
-#mixed{
-    background: #A67C52;
-    height:42px;
-    list-style:none;
-    margin-top: 10%;
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-bottom: 10%;
-    padding:0px;
-    color: white;
-    font-size: 30px;
-}
-
-#recommend{
-    position: relative;
-/*    bottom: 7em;
-    right: 10em;*/
-    font-size: 32px;
-    /*margin-left: 15%;*/
-}
-
-#menu{
-    position: relative;
-   /* left: 48em;
-    bottom: 12em;*/
-    font-size: 22px;
-    text-align: center;
-    /*margin-top: 5%;*/
-    margin-bottom: 5%;
-}
-
-#glass{
-    position: relative;
-    bottom: 7em;
-}
-
-.flip-box {
-  background-color: transparent;
-  width: 300px;
-  height: 200px;
-  border: 1px solid #f1f1f1;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
-}
-
-/* This container is needed to position the front and back side */
-.flip-box-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
-
-/* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-box:hover .flip-box-inner {
-  transform: rotateY(180deg);
-}
-
-/* Position the front and back side */
-.flip-box-front, .flip-box-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-}
-
-/* Style the front side (fallback if image is missing) */
-.flip-box-front {
-  background-color: #bbb;
-  color: black;
-}
-
-/* Style the back side */
-.flip-box-back {
-  background-color: black;
-  opacity: 0.5;
-  color: white;
-  transform: rotateY(180deg);
 }
 
 @media only screen and (max-width: 650px){
@@ -446,5 +340,4 @@ button {
     font-size: 25px;
     font-family: Muli;
     padding: 3px 0px 0px 60px;
-}
 }
