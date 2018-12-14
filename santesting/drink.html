@@ -16,11 +16,10 @@
   $(function () {
                 $('.input').keyup(function () {
                     if ($(this).val() == '') {
-                        //Check to see if there is any text entered
-                        // If there is no text within the input ten disable the button
+                        
                         $('.enableOnInput').prop('disabled', true);
                     } else {
-                        //If there is text in the input, then enable the button
+                        
                         $('.enableOnInput').prop('disabled', false);  
                     }
 
@@ -37,14 +36,14 @@
     .mySlides1, .mySlides2, .mySlides3 {display: none}
     img {vertical-align: middle;}
 
-    /* Slideshow container */
+   
     .slideshow-container {
       max-width: 1000px;
       position: relative;
       margin: auto;
     }
 
-    /* Next & previous buttons */
+   
     .prev, .next {
       cursor: pointer;
       position: absolute;
@@ -60,13 +59,12 @@
       user-select: none;
     }
 
-    /* Position the "next button" to the right */
     .next {
       right: 0;
       border-radius: 3px 0 0 3px;
     }
 
-    /* On hover, add a grey background color */
+   
     .prev:hover, .next:hover {
       background-color: grey;
       color: blue;
@@ -122,7 +120,7 @@
 
 
 <div class="row">
-	<div class=" text-center col-sm-6 "><p id="recommend">Recommend Menu</p></div>
+	<div class=" text-center col-sm-6 "><p id="recommend">Recommended Menu</p></div>
 
 
 
@@ -280,7 +278,7 @@
             <input type="text" name="inputName" id="inputName" size="30" class="input w3-white" style="width: 100%"> 
 
             <p style="text-align: left;padding-top: 1em;">E-mail</p>
-            <input type="text" name="inputEmail" id="inputEmail" size="30" class="input w3-white" style="width: 100%">
+            <input type="email" name="inputEmail" id="inputEmail" size="30" class="input w3-white" style="width: 100%">
 
             <p style="text-align: left;padding-top: 1em;">Phone</p>
             <input type="text" name="inputTel" id="inputTel" size="10" class="input w3-white" style="width: 100%">
