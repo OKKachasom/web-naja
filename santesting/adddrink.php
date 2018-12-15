@@ -38,7 +38,7 @@ $inputTel = filter_input(INPUT_POST, 'inputTel');
     $last_id = mysqli_insert_id($conn);
     echo "You order number is: " . $last_id;
     echo "<br>";
-    echo "*In this form Thai language maybe not correct but you can assured that we'll get you order and also your name.";
+    echo "*In this form Thai language maybe not correct but you can assure that we'll get you order and also your name.";
 } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }
