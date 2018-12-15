@@ -1,5 +1,5 @@
 <?php
-
+header('Content-Type: charset=utf-8');
 
 $inputName = filter_input(INPUT_POST, 'inputName');
 $inputEmail = filter_input(INPUT_POST, 'inputEmail');
