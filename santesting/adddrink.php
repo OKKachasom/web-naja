@@ -21,12 +21,26 @@ $inputTel = filter_input(INPUT_POST, 'inputTel');
 		else{
 			$sql = "INSERT INTO drink_data (inputName,inputEmail,inputTel) values('$inputName','$inputEmail','$inputTel')";
 			if ($conn->query($sql)){
+				
     echo "Your order have been sent! Thank you!";
+    echo "<br>";
+    echo "\nYour Name: " . $inputName ;
+    echo "<br>";
+    echo "\nYour Email: " . $inputEmail;
+    echo "<br>";
+    echo "\nYour Tel.number: " . $inputTel;
+    echo "<br>";
   }
   else{
-    echo "Error: ". $sql ."
-". $conn->error;
+    echo "Error: ". $sql ." ". $conn->error;
   }
+	if (mysqli_query($conn, $sql)) {
+    $last_id = mysqli_insert_id($conn);
+    echo "You order number is: " . $last_id;
+} else {
+    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+}
+
   $conn->close();
 }
 
