@@ -3,6 +3,17 @@
     margin-top: 57%;
     /*margin-left: -40%;*/
 }
+body{
+    background: url('welcome.jpg') no-repeat center center fixed;
+    -webkit-background-size: 100%; 
+    -moz-background-size: 100%; 
+    -o-background-size: 100%; 
+    background-size: 100%; 
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
+    background-size: cover;
+}
 #cssmenu{
     border:none;
     border:0px;
@@ -18,7 +29,7 @@
     list-style:none;
     margin:0;
     padding:0;
-    margin-top: 2%;
+    margin-top: 10%;
 
     }
     #cssmenu li{
@@ -100,6 +111,11 @@
     left: 12em;
     top: 2.5em;
 }
+
+    
+
+
+
 @media only screen and (min-width: 1200px){
 
     .t0 {
@@ -113,6 +129,7 @@
  <!--   font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;  -->
     font-size:12px;
     color:#0000cc;
+    background-color: rgba(0, 0, 0, 0);
     }
 #cssmenu ul{
     background-color: transparent;
@@ -202,3 +219,4 @@
     left: 12em;
     top: 2.5em;
 }}
+
