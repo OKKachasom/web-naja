@@ -25,7 +25,7 @@ $inputTel = filter_input(INPUT_POST, 'inputTel');
 			$sql = "INSERT INTO drink_data (inputName,inputEmail,inputTel) values('$inputName','$inputEmail','$inputTel')";
 			//$sql = "INSERT INTO drink_data (inputName,inputEmail,inputTel,inputOrder) values('$inputName','$inputEmail','$inputTel','&inputOrder')";
 			if ($conn->query($sql)){
-				
+
     echo "Your order have been sent! Thank you!";
     echo "<br>";
     echo "\nYour Name: " . $inputName ;
@@ -42,6 +42,8 @@ $inputTel = filter_input(INPUT_POST, 'inputTel');
 	if (mysqli_query($conn, $sql)) {
     $last_id = mysqli_insert_id($conn);
     echo "You order number is: " . $last_id;
+    echo "<br>";
+    echo "*In this form Thai language maybe not correct but you can assure that we'll get you order and also your name.";
 } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }
