@@ -126,11 +126,11 @@
 
    <div class="col-sm-6 text-left" id="menu" >
    <div style="padding-top: 1em;">
-    <button id="s1" type="button" style="background-color: #A67C52;color:" class="w3-btn w3-button w3-round"onclick="document.getElementById('b9').src='wimg/bot-con.png'; document.getElementById('m8').src='wimg/mid-wmilk.png'; document.getElementById('t7').src='wimg/top-milk.png'"><center>ชาไทย</button> = ชาไทย+นม+นมข้นหวาน</center><br><br>
-      <button id="s2" type="button" style="background-color: #A67C52;color:" class="w3-btn w3-button w3-round"onclick="document.getElementById('b9').src='wimg/bot-wmilk.png'; document.getElementById('m8').src='wimg/mid-wmilk.png'; document.getElementById('t7').src='wimg/top-mat.png'"><center>ชาเชียว</button> = ชาเขียว+นม</center><br><br>
-      <button id="s3" type="button" style="background-color: #A67C52;color:" class="w3-btn w3-button w3-round"onclick="document.getElementById('b9').src='wimg/bot-hot.png'; document.getElementById('m8').src='wimg/mid-blac.png'; document.getElementById('t7').src='wimg/top-blac.png'"><center>อเมริกาโน่</button> = กาแฟดำ+น้ำร้อน</center><br><br>
-      <button id="s4" type="button" style="background-color: #A67C52;color:" class="w3-btn w3-button w3-round"onclick="document.getElementById('b9').src='wimg/bot-wmilk.png'; document.getElementById('m8').src='wimg/mid-dark.png'; document.getElementById('t7').src='wimg/top-blac.png'"><center>มอคค่า</button> = เอสเปสโซ+โกโก้+นม</center><br><br>
-      <button id="s5" type="button" style="background-color: #A67C52;color:" class="w3-btn w3-button w3-round"onclick="document.getElementById('b9').src='wimg/bot-con.png'; document.getElementById('m8').src='wimg/mid-wmilk.png'; document.getElementById('t7').src='wimg/top-blac.png'"><center>ลาเต้</button> = เอสเปสโซ+นม+นมข้นหวาน</center>
+      <button id="s1" type="button" style="background-color: #A67C52;color:" class="w3-btn w3-button w3-round"onclick="document.getElementById('b9').src='wimg/bot-con.png'; document.getElementById('m8').src='wimg/mid-wmilk.png'; document.getElementById('t7').src='wimg/top-milk.png'; myOrder1()"><center>ชาไทย</button> = ชาไทย+นม+นมข้นหวาน</center><br><br>
+      <button id="s2" type="button" style="background-color: #A67C52;color:" class="w3-btn w3-button w3-round"onclick="document.getElementById('b9').src='wimg/bot-wmilk.png'; document.getElementById('m8').src='wimg/mid-wmilk.png'; document.getElementById('t7').src='wimg/top-mat.png'; myOrder2()"><center>ชาเชียว</button> = ชาเขียว+นม</center><br><br>
+      <button id="s3" type="button" style="background-color: #A67C52;color:" class="w3-btn w3-button w3-round"onclick="document.getElementById('b9').src='wimg/bot-hot.png'; document.getElementById('m8').src='wimg/mid-blac.png'; document.getElementById('t7').src='wimg/top-blac.png'; myOrder3()"><center>อเมริกาโน่</button> = กาแฟดำ+น้ำร้อน</center><br><br>
+      <button id="s4" type="button" style="background-color: #A67C52;color:" class="w3-btn w3-button w3-round"onclick="document.getElementById('b9').src='wimg/bot-wmilk.png'; document.getElementById('m8').src='wimg/mid-dark.png'; document.getElementById('t7').src='wimg/top-blac.png'; myOrder4()"><center>มอคค่า</button> = เอสเปสโซ+โกโก้+นม</center><br><br>
+      <button id="s5" type="button" style="background-color: #A67C52;color:" class="w3-btn w3-button w3-round"onclick="document.getElementById('b9').src='wimg/bot-con.png'; document.getElementById('m8').src='wimg/mid-wmilk.png'; document.getElementById('t7').src='wimg/top-blac.png'; myOrder5()"><center>ลาเต้</button> = เอสเปสโซ+นม+นมข้นหวาน</center>
     </div> 
     </div>
 </div>
@@ -175,8 +175,8 @@
         <img id="t7" class="t7" src="wimg/top-bottle.png" style="width:30%">
       </div>
 
-      <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+      <a class="prev" onclick="plusSlides(-1, 0); myOrderCustom()">&#10094;</a>
+      <a class="next" onclick="plusSlides(1, 0); myOrderCustom()">&#10095;</a>
     </div>
 
     <div class="slideshow-container">
@@ -216,8 +216,8 @@
         <img id="m8" class="m8" src="wimg/mid-bottle.png" style="width:30%">
       </div>
 
-      <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+      <a class="prev" onclick="plusSlides(-1, 1); myOrderCustom()">&#10094;</a>
+      <a class="next" onclick="plusSlides(1, 1); myOrderCustom()">&#10095;</a>
     </div>
 
     <div class="slideshow-container">
@@ -262,8 +262,8 @@
       </div>
 
 
-      <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+      <a class="prev" onclick="plusSlides(-1, 2); myOrderCustom()">&#10094;</a>
+      <a class="next" onclick="plusSlides(1, 2); myOrderCustom()">&#10095;</a>
     </div>
 
 <section class="t-center ffont" >
@@ -272,8 +272,14 @@
 <box col="6" style="padding-top: 2em;">
     <inner class="contact-in w3-light-white round">
             <!-- <form action="adddrink.php" method="post" enctype="multipart/form-data" > -->
+            
+
             <div class='search'>
             <form method="post" action="adddrink.php">
+
+            <p style="padding-top: 3%; font-size: 17px">ออเดอร์ของคุณคือ :</p>
+            <p name="inputOrder" id="order" style="color: red; font-size: 30px;">-</p>
+
             <p style="text-align: left;padding-top: 1em;">Name</p>
             <input type="text" name="inputName" id="inputName" size="30" class="input w3-white" style="width: 100%"> 
 
@@ -285,7 +291,7 @@
             <p></p>
             <p>*กรอบให้ครบทุกช่องถึงจะสามารถสั่งน้ำได้</p>
             <input type="submit" onclick="alert()" style="background-color: #A67C52;color:" class="enableOnInput w3-btn w3-button " id="submit" value="OK" disabled='disabled'>
-              <input type="button" style="background-color: #A67C52;color:" class="w3-btn w3-button " id="btn-reset" onclick="plusSlides(-10, 2);plusSlides(-10, 1);plusSlides(-10, 0);document.getElementById('b9').src='wimg/bot-bottle.png'; document.getElementById('m8').src='wimg/mid-bottle.png'; document.getElementById('t7').src='wimg/top-bottle.png'"value="&#10095;RESET">
+              <input type="button" style="background-color: #A67C52;color:" class="w3-btn w3-button " id="btn-reset" onclick="plusSlides(-10, 2);plusSlides(-10, 1);plusSlides(-10, 0);document.getElementById('b9').src='wimg/bot-bottle.png'; document.getElementById('m8').src='wimg/mid-bottle.png'; document.getElementById('t7').src='wimg/top-bottle.png'; myOrderreset()"value="&#10095;RESET">
           <!-- </from> --></form></div>
 </box>
 </theboxes>
@@ -339,7 +345,27 @@
          }
 
       
-
+      function myOrder1(){
+          document.getElementById("order").innerHTML = "ชาไทย";
+      }
+      function myOrder2(){
+          document.getElementById("order").innerHTML = "ชาเขียว";
+      }
+      function myOrder3(){
+          document.getElementById("order").innerHTML = "อเมริกาโน่";
+      }
+      function myOrder4(){
+          document.getElementById("order").innerHTML = "มอคค่า";
+      }
+      function myOrder5(){
+          document.getElementById("order").innerHTML = "ลาเต้";
+      }
+      function myOrderreset(){
+        document.getElementById("order").innerHTML = "";
+      }
+      function myOrderCustom(){
+        document.getElementById("order").innerHTML = "Custom";
+      }
         
    
     // $(function () {
@@ -360,4 +386,5 @@
 
 
     </body>
-    </html>
+    </html>      }
+      }
